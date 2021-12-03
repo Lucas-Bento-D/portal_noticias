@@ -5,5 +5,5 @@ var app = require('./config/server')
 // var noticia = require('./app/routes/noticia')(app);
 // var noticias = require('./app/routes/noticias')(app);
 app.listen(3000, () =>{
-    console.log('rodou')
+    console.log('aplicativo online, link: http://localhost:3000/')
 })

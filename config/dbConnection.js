@@ -1,3 +1,4 @@
+// Modulo do mysql para fazer conexão com o banco de dados
 var mysql = require('mysql');
 
 var connectMySql = () => {
