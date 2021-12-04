@@ -8,9 +8,9 @@ module.exports = app => {
 
 
         var connection = app.config.dbConnection()
-        var noticiasModel = app.app.models.noticiasModel
+        var noticiasModel = new app.app.models.noticiasModel(connection)
 
-        noticiasModel.salvarNoticia(noticia, connection, (error, result) =>{
+        noticiasModel.salvarNoticia(noticia, (error, result) =>{
 
 
             // Função que vai redirecionar o usuario para algum lugar, nesse caso /noticias
